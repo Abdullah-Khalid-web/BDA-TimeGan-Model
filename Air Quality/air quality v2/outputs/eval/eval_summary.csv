@@ -1,0 +1,10 @@
+metric,value
+mmd_rbf,0.108551
+mmd_sigma,37.55886
+avg_dtw,401.8845
+dtw_std,15.4427
+mse_predict_real_trained,0.118109
+mse_predict_synth_trained,0.104459
+predictive_mse_ratio,0.8844287903546723
+tsne_silhouette,0.642473
+umap_silhouette,0.801299

@@ -1,0 +1,31 @@
+AIR QUALITY SYNTHETIC DATA EVALUATION SUMMARY
+==================================================
+
+Overall Quality Score: 0.1637
+
+COMPONENT SCORES:
+  statistical: 0.1356
+  distribution: 0.0000
+  temporal: 0.1184
+  feature_space: 0.5772
+
+DETAILED METRICS:
+  Basic Statistics:
+    mean_correlation: 0.2533
+    std_correlation: -0.6415
+
+  Distribution:
+    ks_mean_pvalue: 0.0000
+    ks_median_pvalue: 0.0000
+    wasserstein_mean: 2.2569
+
+  Temporal Patterns:
+    autocorr_real: 0.1629
+    autocorr_synth: 0.4778
+    autocorr_diff: 0.3149
+    autocorr_similarity: -0.9325
+    crosscorr_real: 0.3939
+    crosscorr_synth: 0.6712
+    crosscorr_similarity: 0.2961
+
+  Feature Space:

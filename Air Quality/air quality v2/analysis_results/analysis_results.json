@@ -1,0 +1,259 @@
+{
+  "preprocessing": {
+    "data_shapes": {
+      "train": [
+        1707,
+        24,
+        15
+      ],
+      "val": [
+        366,
+        24,
+        15
+      ],
+      "test": [
+        366,
+        24,
+        15
+      ]
+    },
+    "metadata": {
+      "n_sequences": 2439,
+      "sequence_length": 24,
+      "n_features": 15,
+      "train_size": 1707,
+      "val_size": 366,
+      "test_size": 366,
+      "feature_groups": {
+        "pollution_levels": 11,
+        "statistics": 1,
+        "geographic": 0,
+        "metadata": 0,
+        "other": 3
+      }
+    },
+    "global_stats": {
+      "min": -109.43302154541016,
+      "max": 34878.4296875,
+      "mean": 0.350971519947052,
+      "std": 52.030941009521484,
+      "median": -0.003535450669005513,
+      "skewness": 496.58648626429823,
+      "kurtosis": 282557.8485270508
+    },
+    "feature_stats": [
+      {
+        "feature": 0,
+        "mean": 9.384248933486106e-09,
+        "std": 1.0,
+        "min": -2.1636722087860107,
+        "max": 1.3322914838790894,
+        "variance": 1.0
+      },
+      {
+        "feature": 1,
+        "mean": 0.4565637707710266,
+        "std": 46.777313232421875,
+        "min": -47.76048278808594,
+        "max": 9413.8671875,
+        "variance": 2188.1171875
+      },
+      {
+        "feature": 2,
+        "mean": 0.5492658615112305,
+        "std": 72.76932525634766,
+        "min": -82.45443725585938,
+        "max": 16700.880859375,
+        "variance": 5295.375
+      },
+      {
+        "feature": 3,
+        "mean": 1.0688990354537964,
+        "std": 168.56666564941406,
+        "min": -53.56365203857422,
+        "max": 34878.4296875,
+        "variance": 28414.720703125
+      },
+      {
+        "feature": 4,
+        "mean": 0.5373786091804504,
+        "std": 68.30963897705078,
+        "min": -109.43302154541016,
+        "max": 14780.9072265625,
+        "variance": 4666.20703125
+      }
+    ],
+    "temporal_stats": {
+      "mean_autocorr": 0.16237805112122988,
+      "mean_crosscorr": 0.21721010832678164
+    },
+    "nan_count": 0,
+    "inf_count": 0,
+    "data_range": 34987.86328125,
+    "preprocessing_quality_score": 0.8
+  },
+  "training": {
+    "checkpoint_dir": "checkpoints/air_quality",
+    "checkpoint_info": {
+      "seq_len": 24,
+      "feature_dim": 15,
+      "hidden_dim": 256,
+      "z_dim": 64,
+      "batch_size": 64,
+      "epochs": 500,
+      "patience": 30,
+      "lambda_rec": 1.0,
+      "lambda_gp": 10.0,
+      "lr_g": 0.0001,
+      "lr_d": 5e-05,
+      "checkpoint_dir": "checkpoints/air_quality",
+      "n_critic": 5,
+      "dropout_rate": 0.2,
+      "gradient_clip": 1.0,
+      "use_batch_norm": true,
+      "noise_std": 0.1,
+      "temperature": 0.5
+    },
+    "synthetic_data": {
+      "path": "outputs/synthetic_air_quality\\synthetic_20251205_115618.npy",
+      "shape": [
+        5000,
+        24,
+        15
+      ],
+      "samples": 5000
+    },
+    "synthetic_stats": {
+      "min": -0.9986968636512756,
+      "max": 0.8807711005210876,
+      "mean": -0.09042736887931824,
+      "std": 0.48674091696739197,
+      "range": 1.8794679641723633
+    },
+    "training_score": 0.5,
+    "issues": []
+  },
+  "evaluation": {
+    "eval_path": "outputs/evaluation_results\\evaluation_results_20251205_115635.json",
+    "overall_score": 0.16365853378555875,
+    "quality_rating": "POOR",
+    "evaluation_results": {
+      "overall_score": 0.16365853378555875,
+      "component_scores": {
+        "statistical": 0.13560730661069825,
+        "distribution": 0.0,
+        "temporal": 0.11844049468005835,
+        "feature_space": 0.5772390186786652
+      },
+      "detailed_metrics": {
+        "basic": {
+          "mean_correlation": 0.2533287926537886,
+          "mean_mae": 0.473114937543869,
+          "std_correlation": -0.6414765563553486,
+          "std_mae": 2.292119264602661,
+          "range_similarity": 0.0447145514190197
+        },
+        "distribution": {
+          "ks_mean_pvalue": 0.0,
+          "ks_median_pvalue": 0.0,
+          "wasserstein_mean": 2.256869359344639
+        },
+        "temporal": {
+          "autocorr_real": 0.1629424719311726,
+          "autocorr_synth": 0.47782753510278675,
+          "autocorr_diff": 0.31488506317161413,
+          "autocorr_similarity": -0.9324921250716101,
+          "crosscorr_real": 0.39392131444502115,
+          "crosscorr_synth": 0.6712020475593121,
+          "crosscorr_similarity": 0.2961012367001459
+        },
+        "feature_space": {
+          "centroid_distance": 1.6275566816329956,
+          "silhouette_score": 0.18723104894161224
+        }
+      }
+    },
+    "visualizations": {
+      "directory": "outputs/evaluation_plots",
+      "files": [
+        "distribution_comparison.png",
+        "pca_comparison.png",
+        "statistical_summary.png",
+        "time_series_comparison.png"
+      ]
+    }
+  },
+  "comparison": {
+    "sample_size": 366,
+    "mean_difference": {
+      "mean": 0.7716042995452881,
+      "max": 3.0764007568359375
+    },
+    "std_difference": {
+      "mean": 30.554248809814453,
+      "max": 225.18307495117188
+    },
+    "ks_test_results": [
+      {
+        "feature": 0,
+        "statistic": 0.627,
+        "p_value": 1.7159001860079139e-184,
+        "significant": true
+      },
+      {
+        "feature": 1,
+        "statistic": 0.578,
+        "p_value": 7.844864182954565e-155,
+        "significant": true
+      },
+      {
+        "feature": 2,
+        "statistic": 0.956,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "feature": 3,
+        "statistic": 0.826,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "feature": 4,
+        "statistic": 0.521,
+        "p_value": 2.954780090542833e-124,
+        "significant": true
+      }
+    ],
+    "temporal_comparison": {
+      "real": {
+        "autocorrelation": 0.158813030766065,
+        "cross_correlation": 0.22437316596960385
+      },
+      "synthetic": {
+        "autocorrelation": 0.24571186750969,
+        "cross_correlation": 0.7442282853288531
+      },
+      "autocorr_diff": 0.086898836743625
+    },
+    "pca_analysis": {
+      "centroid_distance": 24.945514678955078,
+      "variance_explained": 0.9999862313270569,
+      "real_centroid": [
+        12.46410846710205,
+        0.46545520424842834
+      ],
+      "synth_centroid": [
+        -12.464030265808105,
+        -0.46545523405075073
+      ]
+    },
+    "similarity_scores": {
+      "statistical": 0.22839570045471191,
+      "distribution": 0.0,
+      "temporal": 0.913101163256375,
+      "feature_space": 0
+    },
+    "overall_similarity": 0.27397851283315977
+  }
+}

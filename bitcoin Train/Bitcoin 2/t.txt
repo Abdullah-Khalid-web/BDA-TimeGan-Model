@@ -1,0 +1,6 @@
+1.  preprocess_electricity.py
+2.  time_recon_tf.py
+3.  save_recon_artifacts.py
+4.  train_timegan_adverdarial.py
+5.  generate_and_save.py
+6.  evaluate_synth_fixed.py 

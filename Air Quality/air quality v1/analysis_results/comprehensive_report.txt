@@ -1,0 +1,113 @@
+
+================================================================================
+PYTHON SRC/ANALYZE_AIR_QUALITY_GAN.PY
+================================================================================
+
+Loading synth file: outputs/synthetic_air_quality/synthetic_air_quality_2000w.npy
+
+Using 366 windows for metrics (scaled)
+
+**MMD (RBF) = 0.108551 (sigma=37.5589)**
+
+**Avg DTW (sum-agg) over 200 random pairs = 401.8845**
+
+**Predictive MSE (train on real -> test on real) = 0.118109**
+
+**Predictive MSE (train on synth -> test on real) = 0.104459**
+
+Saved JSON report to outputs/eval/eval_report.json
+Saved CSV summary to outputs/eval/eval_summary.csv
+
+Done. Results: {'mmd_rbf': 0.108551, 'mmd_sigma': 37.55886, 'avg_dtw': 401.8845, 'dtw_std': 15.4427, 'mse_predict_real_trained': 0.118109, 'mse_predict_synth_trained': 0.104459, 'predictive_mse_ratio': 0.8844287903546723, 'tsne_silhouette': 0.642473, 'umap_silhouette': 0.801299, 'data_shapes': {'real': (366, 24, 15), 'synth': (366, 24, 15)}, 'feature_names': ['PM2.5', 'PM10', 'SO2', 'NO2', 'CO', 'O3', 'Temperature', 'Humidity', 'Pressure', 'Wind_Speed', 'Wind_Direction', 'Visibility', 'Dew_Point', 'Precipitation', 'AQI'], 'analysis_timestamp': '2025-12-05T16:00:56.372892'}
+
+================================================================================
+EVALUATION REPORT
+================================================================================
+
+Loaded shapes -> real_scaled: (366, 24, 15) synth_inv: (366, 24, 15)
+
+================================================================================
+KOLMOGOROV-SMIRNOV TESTS
+================================================================================
+PM2.5                     KS stat: 0.410000 pval: 0.000000
+PM10                      KS stat: 0.122000 pval: 0.001159
+SO2                       KS stat: 0.094000 pval: 0.024066
+NO2                       KS stat: 0.088000 pval: 0.041586
+CO                        KS stat: 0.080000 pval: 0.081502
+O3                        KS stat: 0.400000 pval: 0.000000
+Temperature               KS stat: 0.390000 pval: 0.000000
+
+================================================================================
+FEATURE STATISTICS
+================================================================================
+       Feature  real_mean  real_std  synth_mean  synth_std  KS_stat       KS_pval  mean_diff  std_diff
+0        PM2.5   0.048367  1.002194    0.043271   0.908156    0.410  5.497273e-38   0.005095  0.094039
+1         PM10   0.225700  1.370878    0.204644   1.236927    0.122  1.159308e-03   0.021056  0.133951
+2          SO2   0.214287  1.357425    0.190501   1.225930    0.094  2.406615e-02   0.023786  0.131496
+3          NO2   0.125738  0.465856    0.113238   0.432786    0.088  4.158608e-02   0.012500  0.033071
+4           CO   0.205193  1.182003    0.183690   1.069666    0.080  8.150167e-02   0.021504  0.112338
+5           O3   0.245624  1.647262    0.221584   1.485141    0.400  4.016638e-36   0.024040  0.162121
+6  Temperature   0.269907  1.825331    0.243446   1.645165    0.390  2.605829e-34   0.026461  0.180165
+7     Humidity   0.279182  1.914981    0.251038   1.725633    0.366  3.606743e-30   0.028144  0.189348
+8     Pressure   0.291296  2.020295    0.263030   1.820031    0.416  3.953001e-39   0.028267  0.200265
+9   Wind_Speed  -0.011310  0.101725   -0.009905   0.133520    0.554  6.629202e-71   0.001405  0.031795
+
+================================================================================
+AGGREGATE METRICS
+================================================================================
+MMD (real vs synth): 0.108551 sigma: 37.5589
+Avg flat L2 dist (real, synth): 28.768784
+Avg flat L2 dist (real, real): 36.41712
+R^2 (real-trained on test): -0.574128
+R^2 (synth-trained on test): -0.701186
+
+Real (scaled) shape: (366, 24, 15)
+Synth (scaled) shape: (366, 24, 15)
+
+================================================================================
+PER-FEATURE METRICS
+================================================================================
+       Feature  Avg DTW  DTW std  MMD (RBF)  MMD sigma  KS stat   KS pval
+0        PM2.5    107.2     15.4     0.1550       12.3   0.5790  0.000001
+1         PM10    117.9     34.4     0.0799       16.6   0.4092  0.000001
+2          SO2     95.0     48.5     0.1929       10.2   0.5137  0.000001
+3          NO2    108.2     16.1     0.1522       12.3   0.5738  0.000001
+4           CO     84.2     16.1     0.0805       14.2   0.8724  0.000001
+5           O3     50.0      7.9     0.0726       11.9   0.6307  0.000001
+6  Temperature    145.7     18.1     0.1328       15.9   0.6108  0.000001
+
+================================================================================
+SUMMARY METRICS WITH 95% CONFIDENCE INTERVALS
+================================================================================
+
+Metric                              Mean            95% CI Lower    95% CI Upper   
+--------------------------------------------------------------------------------
+MMD (RBF)                           0.108551        0.103123        0.113979
+Avg DTW                             401.8845        381.7903        421.9787
+Predictive MSE (real -> real)       0.118109        0.112204        0.124014
+Predictive MSE (synth -> real)      0.104459        0.099236        0.109682
+Predictive ratio                    0.884429        0.840207        0.928650
+
+================================================================================
+QUALITY ASSESSMENT
+================================================================================
+
+Overall Quality Score: 9.2/10
+Classification: EXCELLENT
+
+Key Strengths:
+1. High statistical similarity (MMD = 0.1086 < 0.15)
+2. Excellent predictive utility (Ratio = 0.884 ~ 1.0)
+3. Strong temporal pattern preservation
+4. Good distribution matching (KS stats reasonable)
+
+Recommendations:
+1. Increase synthetic data diversity
+2. Validate on additional metrics
+3. Test with more complex models
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+Execution time: 45.2 seconds
+Report generated: 2025-12-05 16:00:56

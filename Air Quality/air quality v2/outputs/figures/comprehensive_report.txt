@@ -1,0 +1,71 @@
+================================================================================
+COMPREHENSIVE AIR QUALITY TIME-GAN PIPELINE ANALYSIS
+================================================================================
+
+Generated on: 2025-12-04 23:35:41
+
+1. EXECUTIVE SUMMARY
+----------------------------------------
+
+Pipeline Status: ✅ COMPLETE
+
+2. PREPROCESSING ANALYSIS
+----------------------------------------
+
+Data Shapes:
+  Training:      (1707, 24, 15)
+  Validation:    (366, 24, 15)
+  Test:          (366, 24, 15)
+
+Global Statistics:
+  min            : -109.4330
+  max            : 34878.4297
+  mean           : 0.3510
+  std            : 52.0309
+  median         : -0.0035
+  skewness       : 496.5862
+  kurtosis       : 282557.6956
+
+Preprocessing Quality Score: 0.800
+  Rating: GOOD
+
+3. TRAINING ANALYSIS
+----------------------------------------
+
+Checkpoint Directory: checkpoints/air_quality
+
+Synthetic Data Generated:
+  File: synthetic_20251204_151911.npy
+  Shape: (5000, 24, 15)
+  Samples: 5,000
+
+Training Quality Score: 0.500
+  Rating: GOOD
+
+4. EVALUATION ANALYSIS
+----------------------------------------
+
+Overall Synthetic Data Quality Score: 0.356
+  Rating: POOR - Needs significant improvement
+
+5. REAL vs SYNTHETIC COMPARISON
+----------------------------------------
+
+Overall Similarity Score: 0.579
+
+Component Scores:
+  statistical         : 0.801
+  distribution        : 0.000
+  temporal            : 0.860
+  feature_space       : 0.862
+
+6. RECOMMENDATIONS
+----------------------------------------
+
+1. Improve TimeGAN training for better synthetic data quality
+2. Consider adjusting TimeGAN hyperparameters or architecture
+3. Focus on improving temporal pattern generation
+
+================================================================================
+END OF ANALYSIS REPORT
+================================================================================

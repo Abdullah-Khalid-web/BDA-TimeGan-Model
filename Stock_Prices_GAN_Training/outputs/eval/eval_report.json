@@ -1,0 +1,8 @@
+{
+  "mmd_rbf": 0.38520218215700675,
+  "mmd_sigma": 19.908598786151636,
+  "avg_dtw": 759.0116734346841,
+  "mse_predict_real_trained": 0.008750861510634422,
+  "mse_predict_synth_trained": 0.9383324980735779,
+  "predictive_mse_ratio": 107.22744232965503
+}

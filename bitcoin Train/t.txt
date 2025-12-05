@@ -1,0 +1,76 @@
+th status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:45:00.335002: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:45:40.916591: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:46:21.896494: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:47:03.319862: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+   Epoch 21/30 - Loss: 0.037383
+2025-11-16 17:47:43.823139: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:48:22.233451: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:49:01.346925: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:49:40.554825: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:50:20.296187: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+   Epoch 26/30 - Loss: 0.028442
+2025-11-16 17:50:59.882279: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:51:40.005026: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:52:19.586610: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:53:02.144908: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+
+🔧 Phase 2: Training Supervisor (30 epochs)...
+2025-11-16 17:53:25.952209: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+   Epoch 1/30 - Loss: 0.004503
+2025-11-16 17:53:36.729759: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:53:47.403022: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:53:57.542354: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:54:07.878365: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:54:18.230386: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+   Epoch 6/30 - Loss: 0.000811
+2025-11-16 17:54:28.506760: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:54:38.713957: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:54:49.071652: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:54:59.395606: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:55:09.680919: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+   Epoch 11/30 - Loss: 0.000569
+2025-11-16 17:55:19.981989: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:55:30.141263: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:55:40.358743: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:55:50.676718: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:56:00.965099: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+   Epoch 16/30 - Loss: 0.000459
+2025-11-16 17:56:11.018224: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:56:21.159019: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:56:31.447546: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:56:41.665054: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:56:51.876407: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+   Epoch 21/30 - Loss: 0.000398
+2025-11-16 17:57:01.818125: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:57:12.039375: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:57:22.034881: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:57:31.804387: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:57:41.751262: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+   Epoch 26/30 - Loss: 0.000361
+2025-11-16 17:57:51.648395: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:58:01.595692: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:58:11.462149: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+2025-11-16 17:58:21.296423: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+
+🔧 Phase 3: Joint Adversarial Training (300 epochs)...
+   Epoch 1/300 - D: 0.6858, G: 0.7975, G_adv: 0.6950, G_sup: 0.0102
+   Epoch 21/300 - D: 0.6977, G: 0.9175, G_adv: 0.7208, G_sup: 0.0197
+🛑 Early stopping at epoch 23
+✅ Training completed!
+
+🎨 STEP 3: Generating synthetic data...
+🎨 Generating 7200000 synthetic samples...
+❌ Pipeline failed: Unable to allocate 469. KiB for an array with shape (1000, 24, 5) and data type float32     
+Traceback (most recent call last):
+  File "E:\UNI\7th Semeter\BDA\Research\Project\pra2\main4.py", line 1487, in main
+    synthetic_data = trainer.generate_synthetic_data(args.n_samples, scaler)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\UNI\7th Semeter\BDA\Research\Project\pra2\main4.py", line 1261, in generate_synthetic_data
+    X_hat = self.recovery(H_hat, training=False).numpy()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdul\AppData\Local\Programs\Python\Python311\Lib\site-packages\tensorflow\python\framework\ops.py", line 408, in numpy
+    return maybe_arr.copy() if isinstance(maybe_arr, np.ndarray) else maybe_arr
+           ^^^^^^^^^^^^^^^^
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 469. KiB for an array with shape (1000, 24, 5) and data type float32
+PS E:\UNI\7th Semeter\BDA\Research\Project\pra2>

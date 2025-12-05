@@ -1,0 +1,41 @@
+{
+  "mmd_rbf": 0.108551,
+  "mmd_sigma": 37.55886,
+  "avg_dtw": 401.8845,
+  "dtw_std": 15.4427,
+  "mse_predict_real_trained": 0.118109,
+  "mse_predict_synth_trained": 0.104459,
+  "predictive_mse_ratio": 0.8844287903546723,
+  "tsne_silhouette": 0.642473,
+  "umap_silhouette": 0.801299,
+  "data_shapes": {
+    "real": [
+      366,
+      24,
+      15
+    ],
+    "synth": [
+      500,
+      24,
+      15
+    ]
+  },
+  "feature_names": [
+    "PM2.5",
+    "PM10",
+    "SO2",
+    "NO2",
+    "CO",
+    "O3",
+    "Temperature",
+    "Humidity",
+    "Pressure",
+    "Wind_Speed",
+    "Wind_Direction",
+    "Visibility",
+    "Dew_Point",
+    "Precipitation",
+    "AQI"
+  ],
+  "analysis_timestamp": "2025-12-05T01:09:44.484893"
+}

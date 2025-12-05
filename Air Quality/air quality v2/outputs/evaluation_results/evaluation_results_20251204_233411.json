@@ -1,0 +1,36 @@
+{
+  "overall_score": 0.26094951442722686,
+  "component_scores": {
+    "statistical": 0.24079047260300745,
+    "distribution": 0.1839713308472625,
+    "temporal": 0.17383145330470717,
+    "feature_space": 0.5814810198545456
+  },
+  "detailed_metrics": {
+    "basic": {
+      "mean_correlation": -0.3068905194988478,
+      "mean_mae": 0.2554854154586792,
+      "std_correlation": 0.7634474773412424,
+      "std_mae": 0.998212993144989,
+      "range_similarity": 0.05878114700317383
+    },
+    "distribution": {
+      "ks_mean_pvalue": 1.9220864464589962e-70,
+      "ks_median_pvalue": 0.0,
+      "wasserstein_mean": 0.3867622305091249
+    },
+    "temporal": {
+      "autocorr_real": 0.16204827778631217,
+      "autocorr_synth": 0.30798142306003806,
+      "autocorr_diff": 0.1459331452737259,
+      "autocorr_similarity": 0.09944654604334235,
+      "crosscorr_real": 0.4033165419748578,
+      "crosscorr_synth": 0.11511008884506779,
+      "crosscorr_similarity": 0.28540881419675435
+    },
+    "feature_space": {
+      "centroid_distance": 0.7696132659912109,
+      "silhouette_score": 0.06914453953504562
+    }
+  }
+}

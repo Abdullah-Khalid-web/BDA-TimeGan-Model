@@ -1,0 +1,13 @@
+{
+  "real_emb_shape": [
+    3382,
+    64
+  ],
+  "synth_emb_shape": [
+    2000,
+    64
+  ],
+  "embedder_checkpoint_recon": "outputs/checkpoints/recon\\ckpt-3",
+  "embedder_checkpoint_adv": null,
+  "synth_source": "outputs/synth/synth_data_2000w.npy"
+}

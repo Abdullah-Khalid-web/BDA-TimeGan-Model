@@ -1,0 +1,10 @@
+{
+  "N_windows": 3,
+  "avg_cps_per_window_real": 8.0,
+  "avg_cps_per_window_synth": 0.6666666666666666,
+  "windows_with_cps_real_frac": 1.0,
+  "windows_with_cps_synth_frac": 0.3333333333333333,
+  "avg_seasonal_std_real": 1.0657869527124462,
+  "avg_seasonal_std_synth": 55.58349145506434,
+  "avg_peak_lag_abs_corr_diff": 1.2575985549540025
+}
