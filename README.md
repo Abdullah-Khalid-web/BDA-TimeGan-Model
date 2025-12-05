@@ -51,7 +51,7 @@ Stock_Prices_GAN_Training/
 ```
 For Air Quality:
 text
-BDA-TIMEGAN-MODEL/
+Air Quality/air quality v1||v2
 ├── data/
 │   ├── processed/air_quality/          # Processed air quality data
 │   │   ├── train.npy                   # Training dataset
