@@ -1,10 +1,4 @@
 # BDA-TimeGan-Model
-<<<<<<< HEAD
-<<<<<<< HEAD
-# BDA-TimeGan-Model
-=======
->>>>>>> fd7629b621bce479caef004fae95d2513d7cb210
-
 
 Air Quality TimeGAN Pipeline
 A comprehensive pipeline for generating synthetic air quality time-series data using TimeGAN (Time-series Generative Adversarial Networks).
@@ -255,5 +249,3 @@ Commit your changes
 Push to the branch
 
 Create a Pull Request
-=======
->>>>>>> fd7629b621bce479caef004fae95d2513d7cb210
