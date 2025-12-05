@@ -40,7 +40,7 @@ Comprehensive evaluation
 
 📁 Project Structure
 text
-air_quality_timegan/
+```air_quality_timegan/
 ├── data/
 │   ├── raw/                    # Raw air quality data
 │   └── processed/              # Processed data for training
@@ -53,7 +53,7 @@ air_quality_timegan/
 ├── train_timegan.py           # Training script
 ├── evaluate_air_quality.py    # Evaluation script
 └── requirements.txt           # Python dependencies
-
+```
 🔧 Individual Components
 1. Data Preprocessing
 bash
