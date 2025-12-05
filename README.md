@@ -73,7 +73,7 @@ Air Quality/air quality v1||v2
 Installation
 bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Abdullah-Khalid-web/BDA-TimeGan-Model
 cd BDA-TIMEGAN-MODEL
 
 # Install required packages
