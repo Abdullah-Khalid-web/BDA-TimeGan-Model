@@ -1,5 +1,6 @@
 # BDA-TimeGan-Model
 <<<<<<< HEAD
+<<<<<<< HEAD
 # BDA-TimeGan-Model
 =======
 >>>>>>> fd7629b621bce479caef004fae95d2513d7cb210
@@ -254,3 +255,5 @@ Commit your changes
 Push to the branch
 
 Create a Pull Request
+=======
+>>>>>>> fd7629b621bce479caef004fae95d2513d7cb210
